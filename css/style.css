@@ -8,12 +8,12 @@
 }
 
 /* headr wraper*/
-
+/* 
 body {
     background-image: url(../image/adidas-imag.jpg);
     background-repeat: repeat;
     background-attachment: fixed;
-}
+} */
 
 .header-wraper {
     background-image: url(../image/adidas-hedar.jpg);
@@ -105,6 +105,7 @@ display: none;
     position: fixed;
     bottom: 30px;
     right: 20px;
+    z-index: 3;
 }
 /* contakti */
 
@@ -196,13 +197,27 @@ display: none;
 .Cross-link {
     width: 250px;
     height: 30px;
+    padding: 5px;
     border-radius: 5px;
     background-color: blue;
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
 
+}
+.registr-fre {
+    color: #fff;
+
+}
+.adidas-styl {
+    margin:10px;
+    font-size: 20px;
+}
+.adidas-styl1 {
+    margin:10px;
+    font-size: 16px;
+    color: rgb(107, 107, 107);
+}
 /* gadaxdebi */
 .konto{
     width: 100%;
@@ -267,4 +282,62 @@ display: none;
     color: var(--blue-color);
     margin-bottom: 20px;
     font-size: 24px;
+}
+ 
+/* bloki galerea */
+
+.div-wraper-galery {
+    width: 100%;
+    height: auto;
+    display: flex;
+    padding: 40px;
+    justify-content: space-around;
+}
+.logo-galeri {
+    width: 300px;
+    height: 200px;
+}
+.blok1 {
+    width: 320px;
+}
+.stili {
+    padding: 20px;
+    background-color: rgb(238, 238, 235);
+}
+.galery-blog {
+    font-size: 40px;
+}
+.blok1-h3 {
+    margin-top: 30px;
+}
+.ul-stil-navigation {
+    display: flex;
+}
+.ul-li-navigation {
+    margin-left: 30px;
+}
+/* galereis suratebi */
+.wraper-child {
+    background-color: rgb(255, 255, 255);
+    display: inline-block;
+    position: relative;
+    z-index: -1;
+    margin-bottom: 30px;
+    margin-left: 30px;
+}
+.chaild-imag {
+    width: 320px;
+}
+.price {
+    display: inline-block;
+    position: absolute;
+    left: 5px;
+    bottom: 5px;
+    background-color: rgb(255, 255, 255);
+}
+.galeri-wraper {
+    margin:30px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
