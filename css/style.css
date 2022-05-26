@@ -4,7 +4,9 @@
     --black-color: rgb(0, 0, 0);
     --silver-color: #e2dcdc;
     --blue-color: #2525f5;
-    --foter-color: rgb(32, 32, 32);
+    --foter-color: rgb(71, 71, 71);
+    --red-color: red;
+    --chaild-auter:#707070;
 }
 
 /* headr wraper*/
@@ -23,6 +25,26 @@ body {
     height: 350px;
     display: flex;
     position: relative;
+    z-index: 3;
+}
+.home::after {
+    content: ' ';
+    width: 3px;
+    height: 40px;
+    background-color: #012b86;
+    display: inline-block;
+    margin: 0 15px;
+}
+.home-contact {
+    margin-top: 250px;
+    margin-left: 100px;
+    display: flex;
+}
+.home, .contact {
+    color: #012b86;
+    font-size: 50px;
+    text-transform: uppercase;
+    text-shadow: 4px 4px 10px black;
 }
 .nav-wraper {
     width: 100%;
@@ -40,6 +62,47 @@ body {
     justify-content: space-between;
     position: absolute;
     right: 150px;
+}
+.li-nav::after {
+    content: ' ';
+    width: 0px;
+    height: 2px;
+    background-color: #1b1bf0;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transition: all 0.3s linear;
+}
+.home-line::after {
+    width: 100%;
+    height: 2px;
+    background-color: #1b1bf0;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+}
+.galery-line::after {
+    width: 100%;
+    height: 2px;
+    background-color: #1b1bf0;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.ontact-line::after {
+    width: 100%;
+    height: 2px;
+    background-color: #1b1bf0;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.li-nav {
+    position: relative;
+}
+.li-nav:hover::after {
+    width: 100%;
 }
 .click {
     width: 60px;
@@ -87,11 +150,6 @@ display: none;
 .logo-adidas {
     font-size: 32px;
     color: blue;
-}
-.home-contact {
-    margin-top: 150px;
-    margin-left: 100px;
-    display: flex;
 }
 .contact::before {
     width: 2px;
@@ -161,6 +219,9 @@ display: none;
     width: 320px;
     height: 450px;
 }
+.childe {
+    box-shadow: 3px 3px 10px #525151;
+}
 .div-section-wraper {
     display: flex;
     justify-content: space-around;
@@ -168,6 +229,16 @@ display: none;
 .info-adidas {
     font-size: 18px;
     margin-bottom: 20px;
+}
+.location {
+    display: flex;
+    align-items: center;
+}
+.kontakti {
+    margin-left: 10px;
+}
+.fa-phone, .fa-envelope, .fa-location-dot {
+    color: var(--foter-color);
 }
 /* index-seqcia-2 */
 .div-info {
@@ -279,11 +350,58 @@ display: none;
     color: var(--blue-color);
 }
 .foter-info {
-    color: var(--blue-color);
+    color: black;
     margin-bottom: 20px;
     font-size: 24px;
 }
- 
+.fa-facebook::after {
+    content: 'facebook';
+    margin-left: 20px;
+    font-size: 10px;
+    display: none;
+}
+.fa-facebook:hover::after {
+    display: block;
+}
+.fa-twitter::after {
+    content: 'twitter';
+    margin-left: 20px;
+    font-size: 10px;
+    display: none;
+}
+.fa-twitter:hover::after {
+    display: block;
+}
+.fa-youtube-square::after {
+    content: 'youtube';
+    margin-left: 20px;
+    font-size: 10px;
+    display: none;
+}
+.fa-youtube-square:hover::after {
+    display: block;
+}
+.fa-telegram::after {
+    content: 'youtube';
+    margin-left: 20px;
+    font-size: 10px;
+    display: none;
+}
+.fa-telegram:hover::after {
+    display: block;
+}
+.soc-set-f {
+    color: #2a81f3;
+}
+.soc-set-t {
+    color: #4becec;
+}
+.soc-set-y {
+    color: #b32929;
+}
+.soc-set-g {
+    color: #4c88d6;
+}
 /* bloki galerea */
 
 .div-wraper-galery {
@@ -317,16 +435,19 @@ display: none;
     margin-left: 30px;
 }
 /* galereis suratebi */
-.wraper-child {
+.wraper-child {   
+    background-color: yellow;
     background-color: rgb(255, 255, 255);
     display: inline-block;
     position: relative;
-    z-index: -1;
+    /* z-index: -1; */
     margin-bottom: 30px;
     margin-left: 30px;
+    transition: all 2s linear;
 }
 .chaild-imag {
     width: 320px;
+
 }
 .price {
     display: inline-block;
@@ -335,12 +456,25 @@ display: none;
     bottom: 5px;
     background-color: rgb(255, 255, 255);
 }
+.comentar {
+    font-size: 20px;
+    display: none;
+}
 .galeri-wraper {
     margin:30px;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 }
+.wraper-child:hover::after {
+    content: 'new colection';
+    color: var(--chaild-auter);
+    font-size: 30px;
+height: 650px;
+background-color: rgb(253, 249, 249);
+border: 1px solid rgb(209, 204, 204);
+}
+
 
 /* sing html */
 .sing-name {
