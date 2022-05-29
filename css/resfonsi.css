@@ -1,0 +1,104 @@
+@media (max-width: 1024px){
+ .bank-card {
+     width: 100px;
+     height: 40px;
+ }
+ .contact-blok2 {
+     width: 40%;
+ }
+ .contact-blok1 {
+     display: inline-block;
+ }
+ .compani-info {
+    flex-direction: column;
+}
+ .div-section-wraper {
+     flex-wrap: wrap;
+ }
+}
+@media (max-width: 800px){
+    .margin-futer-blok {
+        margin-left: 10px;
+    }
+    .div-footer {
+        flex-wrap: wrap;
+    }
+    .bari {
+        display: block;
+    }
+    .konto-name {
+        font-size: 20px;
+    }
+    .div-footer-galery, .div-footer-index {
+        flex-wrap: wrap;
+    }
+    .satauri-2 {
+        font-size: 20px;
+    }
+    .div-info {
+       display: none;
+    }
+}
+
+@media(max-width:590px){
+    .contact-info {
+        flex-direction: column;
+       align-items: center;
+    }
+    .konto {
+        display: none;
+    }
+    .contact-blok1 {
+        width: 90%;
+    }
+    .gif-size {
+        width: 280px;
+        margin-bottom: 30px;
+    }
+    .ul-compani {
+        flex-wrap: wrap;
+    }
+    .compani-paragraf {
+   width: 200px;
+    }
+    .linkedin {
+        width: 250px;
+    }
+    .fa-arrow-right {
+        margin-left: 40px;
+    }
+    .compani-info {
+        padding: 50px 10px;
+    }
+    .il-compani {
+        margin-top: 20px;
+    }
+    .ul-li-navigation {
+        font-size: 10px;
+    }
+}
+
+@media (max-width:1000px){
+    .galeri-imig-wraper {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width:480px) {
+    .ul-stil-navigation {
+        flex-direction: column;
+}
+.ul-li-navigation {
+    margin-top: 10px;
+}
+.div-wraper-galery {
+    padding: 5px;
+}
+.galery-blog {
+    font-size: 20px;
+}
+.logo-galeri {
+    width: 150px;
+    height: 100px;
+}
+}

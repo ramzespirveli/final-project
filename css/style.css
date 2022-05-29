@@ -10,13 +10,6 @@
 }
 
 /* headr wraper*/
-/* 
-body {
-    background-image: url(../image/adidas-imag.jpg);
-    background-repeat: repeat;
-    background-attachment: fixed;
-} */
-
 .header-wraper {
     background-image: url(../image/adidas-hedar.jpg);
     background-repeat: no-repeat;
@@ -27,6 +20,7 @@ body {
     position: relative;
     z-index: 3;
 }
+
 .home::after {
     content: ' ';
     width: 3px;
@@ -46,22 +40,84 @@ body {
     text-transform: uppercase;
     text-shadow: 4px 4px 10px black;
 }
-.nav-wraper {
+.div-wraper {
     width: 100%;
     height: 50px;
     padding: 10px;
     background-color: var(--black-color);
     display: flex;
-    position: relative;
-    position: fixed;
+    justify-content: space-between;
     opacity: 60%;
+    position: fixed;
 }
+.line1 {
+width: 30px;
+height: 4px;
+background-color: rgb(0, 0, 0);
+margin-top: 4.5px;
+border-radius: 3px;
+
+
+    
+}
+.bari {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  cursor: pointer;
+  flex-direction: column;
+  border-radius: 3px;
+  transition: all 0.3s linear;
+ display: none;
+  
+}
+
+ .active .lin1 {
+     
+   transform: translate(-5%,200%) rotate(45deg);
+}
+.active .lin2 {
+    display: none;
+}
+.active .lin3 {
+ 
+transform: rotate(-45deg);
+}
+.nav-wraper {
+    width: 500px;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+
+
 .ul-wraper {
     width: 300px;
     display: flex;
     justify-content: space-between;
     position: absolute;
     right: 150px;
+}
+@media (max-width:800px){
+    .ul-wraper {
+        display: none;
+    }
+}
+.columi{
+    display: block;
+    position: absolute;
+    align-content: space-between;
+    left: 30px;
+    top: -60px;
+}
+.activ-nav {
+height: 150px;
+opacity: 95%;  
+flex-direction: column;  
 }
 .li-nav::after {
     content: ' ';
@@ -98,6 +154,7 @@ body {
     bottom: 0;
     right: 0;
 }
+
 .li-nav {
     position: relative;
 }
@@ -107,10 +164,11 @@ body {
 .click {
     width: 60px;
     height: 25px;
-    padding: 0 5px;
+    padding: 2.5px 5px;
     display: flex;
     position: absolute;
-    right: 30px;
+    top: 12px;
+    right: 50px;
     border: 1px solid #595f38;
     font-size: 20px;
     color: #fff;
@@ -123,23 +181,8 @@ body {
     color: var(--wit-color);
     text-transform: uppercase;
 }
-.bar-imag {
-    width: 30px;
-    height: 30px;
-    background-color: #fff;
-}
-.bur-bar {
-    width: 50px;
-    height: 30px;
-display: flex;
-position: absolute;
-left: 20px;
-display: none;
-
-}
 .logo {
     display: flex;
-    position: absolute;
     left: 100px;
 }
 .adidas {
@@ -174,14 +217,15 @@ display: none;
     z-index: -1;
 }
 .contact-blok1 {
-    width: 40%;
-    height: 400px;
+    width: 320px;
+    height: 380px;
     background-color: var(--silver-color);
     padding-left: 20px;
+    
 }
 .contact-blok2 {
-    width: 45%;
-    height: 400px;
+    width: 60%;
+    height: 380px;
     margin-left: 10px;
     background-color: var(--silver-color);
 }
@@ -193,6 +237,7 @@ display: none;
     font-size: 60px;
     margin-left: 30px;
     margin-bottom: 30px;
+    font-family: 'Bebas Neue', cursive;
 }
 .maps {
     width: 100%;
@@ -202,6 +247,7 @@ display: none;
     font-size: 28px;
     margin-bottom: 10px;
     margin-top: 20px;
+    color: var(--chaild-auter);
 }
 .line-li{
  font-size: 20px;
@@ -210,6 +256,7 @@ display: none;
 .satauri {
     font-size: 50px;
     margin: 30px;
+    font-family: 'Bebas Neue', cursive;
 }
 .satauri-2 {
     font-size: 30px;
@@ -218,6 +265,9 @@ display: none;
 .produckt .childe {
     width: 320px;
     height: 450px;
+}
+.childe:hover {
+    box-shadow: 5px 5px 30px var(--blue-color);
 }
 .childe {
     box-shadow: 3px 3px 10px #525151;
@@ -266,7 +316,7 @@ display: none;
     
 }
 .Cross-link {
-    width: 250px;
+    width: 300px;
     height: 30px;
     padding: 5px;
     border-radius: 5px;
@@ -278,6 +328,7 @@ display: none;
 }
 .registr-fre {
     color: #fff;
+    display: flex;
 
 }
 .adidas-styl {
@@ -320,7 +371,7 @@ display: none;
     width: 150px;
     height: 150px;
 }
-.div-footer-index{
+.div-footer-index, .div-footer-galery{
     width: 100%;
     margin-top: 350px;
     padding: 30px;
@@ -331,6 +382,9 @@ display: none;
     background-color: var(--foter-color);
     z-index: -1;
 }
+.div-footer-galery {
+    margin-top: 50px;
+}
 .div-footer {
     width: 100%;
     margin-top: 750px;
@@ -338,7 +392,6 @@ display: none;
     position: absolute;
     display: flex;
     justify-content: space-around;
-    background-color: aqua;
     background-color: var(--foter-color);
     z-index: -1;
 }
@@ -382,7 +435,7 @@ display: none;
     display: block;
 }
 .fa-telegram::after {
-    content: 'youtube';
+    content: 'telegrem';
     margin-left: 20px;
     font-size: 10px;
     display: none;
@@ -424,6 +477,7 @@ display: none;
 }
 .galery-blog {
     font-size: 40px;
+    font-family: 'Bebas Neue', cursive;
 }
 .blok1-h3 {
     margin-top: 30px;
@@ -440,13 +494,12 @@ display: none;
     background-color: rgb(255, 255, 255);
     display: inline-block;
     position: relative;
-    /* z-index: -1; */
     margin-bottom: 30px;
     margin-left: 30px;
-    transition: all 2s linear;
 }
 .chaild-imag {
     width: 320px;
+    height: 550px;
 
 }
 .price {
@@ -474,13 +527,56 @@ height: 650px;
 background-color: rgb(253, 249, 249);
 border: 1px solid rgb(209, 204, 204);
 }
-
-
+.wraper-child:hover .price {
+    position: absolute;
+    font-size: 30px;
+    left: 20px;    
+}
+.border-news {
+    border:  0.1px solid rgb(126, 125, 125);
+    display: flex;
+    padding: 15px 30px;
+}
+.news-margin {
+    margin: 0 30px;
+}
+.news-color {
+    color: var(--chaild-auter);
+    transition: all 0.3s linear;
+}
+.news-color:hover {
+    font-size: 24px;
+    color: var(--blue-color);
+}
+.galeri-imig-wraper {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px auto;
+}
+.galeri-imig {
+    width: 230px;
+}
+.colection-imag:hover {
+    border: 1px solid black;
+}
+.border-news-text {
+    margin: 15px 5px;
+    font-size: 20px;
+    color: var(--chaild-auter);
+}
+.border-news-text2 {
+    margin: 15px 5px;
+    font-size: 16px;
+    color: var(--chaild-auter);
+}
 /* sing html */
 .sing-name {
     text-align: center;
     text-transform: uppercase;
     font-size: 60px;
+}
+.sing {
+    color: #fff;
 }
 .sing-wraper {
     width: 320px;
@@ -556,3 +652,142 @@ border: 1px solid rgb(209, 204, 204);
 .sing-regist {
     background-image: url(../image/adidas-imag.jpg);
 }
+/* compani info */
+.compani-info {
+    background: rgb(0, 0, 0);
+    padding: 100px 50px;
+    display: flex;
+
+}
+.foto-gif {
+    margin-right: 50px;
+}
+.compani-name {
+    color: #fff;
+    font-size: 30px;
+    margin-bottom: 60px;
+}
+.compani-h1 {
+    font-size: 50px;
+    color: #fff;
+    margin-bottom: 20px;
+    font-family: 'Bebas Neue', cursive;
+}
+.compani-paragraf {
+    width: 300px;
+    color: #fff;
+    line-height: 20px;
+    margin-bottom: 35px;
+}
+.linkedin {
+    width: 300px;
+    height: 50px;
+    border: 0 solid;
+    background-color: #b13838;
+    color: #fff;
+    padding: 17px;
+    font-size: 16px;
+    margin-bottom: 70px;
+    transition: all 0.4s linear;
+    position: relative;
+}
+.linkedin::after {
+    content: ' ';
+    width: 0px;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: all 0.3s linear;
+   
+}
+.linkedin:hover::after {
+width: 100%;
+}
+.linkedin:hover{
+    background-color: #830f0f;
+}
+.fa-arrow-right {
+    margin-left: 100px;
+}
+.il-comp-color {
+    color: #fff;
+    margin-right: 20px;
+}
+.ul-compani {
+    display: flex;
+}
+.foto-gif {
+    margin-top: 40px;
+}
+
+/* fontebi */
+p {
+    font-family: 'Cormorant Garamond';
+}
+h3 {
+    font-family: 'Frank Ruhl Libre';
+}
+h2 {
+    font-family: 'Playfair Display SC';
+}
+/* slid-shou */
+.cection-galeri {
+    width: 100%;
+    margin-top: 520px;
+   
+}
+.slid-shou {
+    width: 100%;
+    height: 500px;
+    background-color: red;
+    position: absolute;
+    display: block;
+    overflow: hidden;
+}
+figure {
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    display: block;
+    overflow: hidden;
+    animation: slider 12s infinite;
+}
+figure:nth-child(1){
+    background-image: url("../galery/kids-4.jpg");
+    z-index: 4;
+    animation-delay: -1s;
+}
+figure:nth-child(2){
+    background-image: url("../galery/wumen-8.jpg");
+    z-index: 3;
+    animation-delay: 2s;
+}
+figure:nth-child(3){
+    background-image: url("../galery/men-4.jpg");
+    z-index: 2;
+    animation-delay: 5s;
+}
+figure:nth-child(4){
+    background-image: url("../galery/kids-5.jpg");
+    z-index: 1;
+    left: 0;
+    animation-delay: 8s;
+}
+@keyframes slider {
+    0% {left: 100%; width: 100%}
+    5%{left: 0;}
+    25%{left: 0;}
+    30%{left: -100%; width: 100%}
+    31%{left: -100%; width: 0}
+    100%{left: 100%; width: 0}
+}
+
+
+
+
+/* header */
