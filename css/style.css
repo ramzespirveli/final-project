@@ -24,10 +24,10 @@
 .home::after {
     content: ' ';
     width: 3px;
-    height: 40px;
+    height: 30px;
     background-color: #012b86;
     display: inline-block;
-    margin: 0 15px;
+    margin: 0 10px;
 }
 .home-contact {
     margin-top: 250px;
@@ -36,9 +36,13 @@
 }
 .home, .contact {
     color: #012b86;
-    font-size: 50px;
+    font-size: 40px;
     text-transform: uppercase;
     text-shadow: 4px 4px 10px black;
+}
+.marjin-hme-contact {
+    display: flex;
+    margin: 200px 50px;
 }
 .div-wraper {
     width: 100%;
@@ -194,12 +198,13 @@ flex-direction: column;
     font-size: 32px;
     color: blue;
 }
-.contact::before {
+/* .contact::before {
+    content: ' ';
     width: 2px;
     height: 40px;
     background: blue;
     margin: 0 10px;
-}
+} */
 .chat-icon {
     width: 40px;
     height: 40px;

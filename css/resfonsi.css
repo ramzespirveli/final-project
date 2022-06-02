@@ -38,6 +38,9 @@
     .div-info {
        display: none;
     }
+    .nav-wraper {
+        margin-top: 50px;
+    }
 }
 
 @media(max-width:590px){
@@ -78,6 +81,9 @@
     }
     .discount {
         font-size: 8px;
+    }
+    .marjin-hme-contact {
+        display: none;
     }
 }
 
